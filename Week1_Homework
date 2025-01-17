@@ -1,0 +1,107 @@
+# Week 2: Vectors and Matrices  
+
+## Vector Operations  
+### Dot Product  
+The dot product of two vectors **u** and **v** is calculated as:  
+**u · v = ||u|| ||v|| cos(θ)**  
+- **θ** is the angle between the vectors.  
+- **Example:**  
+  Let **u = (2, 3)** and **v = (4, 1)**:  
+u · v = 2(4) + 3(1) = 11
+
+markdown
+Copy
+Edit
+
+### Magnitude and Direction  
+- **Magnitude:**  
+||v|| = sqrt(x² + y²)
+
+markdown
+Copy
+Edit
+- **Direction:**  
+θ = arctan(y / x)
+
+shell
+Copy
+Edit
+
+## Trigonometric Definitions  
+### Polar and Cartesian Coordinates  
+- **From Cartesian to Polar:**  
+r = sqrt(x² + y²) θ = arctan(y / x)
+
+css
+Copy
+Edit
+- **From Polar to Cartesian:**  
+x = r cos(θ) y = r sin(θ)
+
+shell
+Copy
+Edit
+
+## Solving Linear Equations  
+### Geometric Interpretation  
+Solving a system of linear equations means finding the intersection of their corresponding lines (in 2D) or planes (in 3D).  
+
+### Matrix Example  
+For **Ax = b**, where:  
+A = [[2, 1], [1, -1]]
+
+b = [[3], [0]]
+
+shell
+Copy
+Edit
+Solve using elimination or substitution to find **x**.  
+
+## Row Reduction  
+### Example: Gaussian Elimination  
+Given matrix:  
+A = [[1, 2, -1], [2, -3, 4], [-1, 1, 3]]
+
+css
+Copy
+Edit
+Row reduce to reach row echelon form:  
+[[ 1, 2, -1], [ 0, -7, 6], [ 0, 0, -2]]
+
+markdown
+Copy
+Edit
+
+## Linear Combinations  
+A **linear combination** involves scaling and summing vectors:  
+c₁v₁ + c₂v₂ + ...
+
+markdown
+Copy
+Edit
+- **Example:**  
+  Let **v₁ = (1, 0)** and **v₂ = (0, 1)**:  
+3v₁ + 2v₂ = (3, 2)
+
+markdown
+Copy
+Edit
+
+## Linear (In)dependence and Span  
+- **Linear Dependence:** Vectors are dependent if one can be written as a combination of others.  
+- **Span:** The set of all vectors that can be formed as linear combinations of a given set.  
+
+## Matrix Operations  
+### Matrix-Vector Multiplication  
+Matrix-vector multiplication applies a transformation.  
+
+**Example:**  
+A = [[1, 2], [3, 4]]
+
+v = [[5], [6]]
+
+makefile
+Copy
+Edit
+Result:  
+A · v = [[1(5) + 2(6)], [3(5) + 4(6)]] = [[17], [39]]
