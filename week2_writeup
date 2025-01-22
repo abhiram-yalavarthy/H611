@@ -1,0 +1,89 @@
+Explanations for Situation 1 and Situation 2
+Question 1
+If we define "term similarity" based on the cosine of the angle drawn between term-vectors, then term 1 is more similar to term 2 than it is to term 3.
+
+Explanation
+Cosine similarity is calculated as:
+
+cos(θ) = (A · B) / (||A|| ||B||)
+Where:
+
+A · B is the dot product of the vectors.
+||A|| and ||B|| are the magnitudes (norms) of the vectors.
+A higher cosine similarity value (closer to 1) indicates greater similarity. The question states that term 1 is more similar to term 2 than term 3, so the cosine similarity between term 1 and term 2 is higher.
+
+Answer
+True
+
+Question 2
+There exists a "special collection" of documents which can only be created by linear combinations of all four columns of the matrix.
+
+Explanation
+If the columns of the matrix are linearly independent, the span of all four columns defines a "special collection" of documents. This means any document in this space requires all four columns to represent it as a valid linear combination.
+
+Answer
+True
+
+Question 3
+The columns of this matrix are all linearly independent.
+
+Explanation
+Linear independence means that no column can be written as a linear combination of the others. If the matrix has full rank (equal to the number of columns), the columns are linearly independent. This property is given in the problem.
+
+Answer
+True
+
+Question 4
+This matrix also represents an invertible linear transformation. That is, it does NOT "squash" a 4-dimensional vector into a 3-dimensional space.
+
+Explanation
+For a matrix to represent an invertible linear transformation:
+
+It must be square (e.g., 4x4).
+Its columns must be linearly independent.
+If both conditions hold, the matrix is invertible and preserves the 4-dimensional vector space without reducing it to a lower dimension. Based on the situation, the matrix satisfies these conditions.
+
+Answer
+True
+
+Question 5
+The determinant of the matrix is negative because we subtracted a constant value (3) from all the values in the matrix.
+
+Explanation
+Subtracting a constant value from all elements of a matrix does not directly affect the determinant's sign. Determinants are only affected by row operations like scaling, swapping, or adding multiples of rows. This claim is false and can be disproven using a simple 2x2 matrix example.
+
+Answer
+False
+
+Question 6
+There exists a matrix B such that AB = I and BA = I, where I is the identity matrix.
+
+Explanation
+If A is invertible, there exists an inverse matrix B = A⁻¹ such that:
+
+css
+Copy
+Edit
+AB = I and BA = I
+This is a fundamental property of invertible matrices.
+
+Answer
+True
+
+Question 7
+The columns of A are all linearly independent.
+
+Explanation
+If A is invertible, its columns must be linearly independent. This ensures that the rank of A equals the number of its columns, meaning no column can be expressed as a linear combination of the others.
+
+Answer
+True
+
+Question 8
+Matrix B can be created from A using basic matrix operations (matrix subtraction, matrix multiplication, etc.).
+
+Explanation
+If B = A⁻¹, it can be computed using standard matrix operations like determinant, adjugate, and scalar multiplication. These are considered basic operations.
+
+Answer
+True
